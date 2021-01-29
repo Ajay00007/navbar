@@ -1,0 +1,133 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: arial, sans-serif;
+ }
+
+ .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 30px;
+   background: blue;
+   color: #fff;
+ }
+
+ .u-name {
+   font-size: 20px;
+   padding-left: 1px;
+ }
+
+ .u-name b {
+   color: green;
+ }
+
+ .header i {
+   font-size: 25px;
+   cursor: pointer;
+   color: #fff;
+ }
+
+ .header i:hover {
+   color: red;
+ }
+
+ .user-p {
+   text-align: center;
+   padding-left: 10px;
+   padding-top: 25px;
+ }
+
+ .user-p img {
+   width: 50px;
+   border-radius: 50%;
+ }
+
+ .user-p h4 {
+   color: greenyellow;
+   font-weight:bold;
+   padding: 5px 0px;
+
+ }
+
+ .side-bar {
+   width: 150px;
+   background: cadetblue;
+   min-height: 100vh;
+   transition: 500ms width;
+ }
+
+ .body {
+   display: flex;
+ }
+
+ .section-1 {
+	width: 100%;
+	background: url("IMG_20210129_110916.jpg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.section-1 h1 {
+	color:#fff;
+	font-size: 50px;
+}
+.section-1 p {
+	color: #127b8e;
+	font-size: 20px;
+	background: #fff;
+	padding: 7px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+.side-bar ul {
+	margin-top: 20px;
+	list-style: none;
+}
+.side-bar ul li {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 15px 0px;
+	padding-left: 10px;
+	transition: 500ms background;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.side-bar ul li:hover {
+	background: #127b8e;
+	border-radius:10px;
+}
+.side-bar ul li a {
+	text-decoration: none;
+	color: #eee;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+.side-bar ul li a i {
+	display: inline-block;
+	padding-right: 3px;
+	font-size: 15px;
+}
+#navbtn {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 20px;
+	transition: 500ms color;
+}
+#checkbox {
+	display: none;
+}
+#checkbox:checked ~ .body .side-bar {
+	width: 0px;
+}
+#checkbox:checked ~ .body .side-bar .user-p{
+	visibility: hidden;
+}
+#checkbox:checked ~ .body .side-bar a span{
+	display: none;
+}
